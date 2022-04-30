@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 10px;
+  margin-top: 0;
+  padding: 10px;
+  padding-top: 0;
+}
+
+.bodyData {
+  position: relative;
+  top: 100px;
+  overflow: hidden;
+  overflow: auto;
+}
+
+hr {
+  background-color: #ccc;
+  /* margin: -10px;
+  padding: -10px; */
+}
+
+.image {
+  width: 120px;
+  position: absolute;
+
+}
+
+.roboAvatar {
+  border-radius: 50%;
+  border: solid 1px gray;
+  float: left;
+  width: 100%;
+  top: 50%;
+  margin-top: 20px;
+}
+
+.info p {
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-left: 150px;
+}
+
+strong {
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 0;
+  margin-left: -20px;
+}
+
+.hiddenGrades {
+  height: 0px;
+  padding: 12px;
+  margin-left: 150px;
+  overflow: hidden;
+}
+
+.gradesList {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+li span {
+  margin-left: 20px;
+}
+
+.button {
+  margin-left: 95%;
+  margin-top: -7px;
+  position: absolute;
+  font-weight: bold;
+  font-size: 60px;
+  width: 20px;
+  color: gray;
+  text-align: center;
+  cursor: pointer;
+}
+
+.searchBar {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  margin-top: 0;
+  padding-top: 10px;
+  background-color: white;
+}
+
+.search {
+  background-color: white;
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  margin: 0px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.search:focus {
+  background-color: white;
+  padding-top: 10px;
+  border: none;
+  border-bottom: 2px solid gray;
+  width: 95%;
+  outline: none;
+  margin: 0px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.inputTags {
+  width: 15%;
+  margin-left: 150px;
+  margin-top: 0;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.tagsInput {
+  background-color: white;
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  margin: 0px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+  opacity: 0.5
+}
+
+.tagsInput:focus {
+  background-color: white;
+  padding-top: 10px;
+  border: none;
+  border-bottom: 2px solid gray;
+  width: 95%;
+  outline: none;
+  margin: 0px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  opacity: 0.75
+}
+
+.tagsDisplay {
+  width: 25%;
+  margin-left: 150px;
+  margin-top: 0;
+  padding-bottom: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.tagValue{
+   margin:5px;
+  width: auto;
+  padding:5px;
+  color: black;
+  font-weight:400;
+  background-color: rgba(154, 151, 151, 0.2);
+  border-radius: 4px;
+
+}
+
