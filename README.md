@@ -1,6 +1,4 @@
-# Deployed in netlify
-
-https://cool-moonbeam-d7e87b.netlify.app
+# https://cool-moonbeam-d7e87b.netlify.app
 
 ## Description
 1. Fetch data from this public JSON API, and present the information on the screen.
