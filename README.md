@@ -1,4 +1,4 @@
-# studentprofiles.netlify.app
+# https://studentprofiles.netlify.app
 
 ## Description
 1. Fetch data from this public JSON API, and present the information on the screen.
