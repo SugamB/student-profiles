@@ -4,10 +4,21 @@
 body {
   font-family: 'Raleway', sans-serif;
   margin: 10px;
-  margin-top: 0;
+  margin-top: 5px;
   padding: 10px;
   padding-top: 0;
 }
+.progress-bar {
+  position: fixed;
+  top: 0;
+  height: 5px;
+  width: 0;
+  background: linear-gradient(90deg, #32c5ff 0%, #b620e0 51.26%, #32c5ff 100%);
+  z-index: 11;
+  transition: width 0.2s;
+  /*   will-change: width; */
+}
+
 
 .bodyData {
   position: relative;

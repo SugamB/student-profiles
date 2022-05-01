@@ -9,6 +9,29 @@ function App() {
   const [searchTag, setSearchTag] = useState("");
   // let tagsObj = []
 
+  if (document.querySelector(".progress-bar")) {  // get elements for scroll progress bar
+    const body = document.body;
+    const progressBar = document.querySelector(".progress-bar");
+
+    function stretch() {
+      const pixelScrolled = window.scrollY;
+      const viewportHeight = window.innerHeight;
+      const totalContentHeight = body.scrollHeight;
+
+      // convert pixel to percentage
+      const pixelToPerc =
+        (pixelScrolled / (totalContentHeight - viewportHeight)) * 100;
+      // console.log(pixelToPerc, "pixel");
+      // set width to the progress bar
+      progressBar.style.width = Math.round(pixelToPerc) + "%";
+    }
+
+    // scroll event
+    window.addEventListener("scroll", stretch);
+  }
+
+
+
   // let click = []
   let url = "https://api.hatchways.io/assessment/students"
   useEffect(() => {
@@ -80,6 +103,7 @@ function App() {
 
   return (
     <div>
+      <div class="progress-bar"></div>
       <div className="searchBar">
         <input
           className="search"
